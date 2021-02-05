@@ -64,56 +64,58 @@ const TargetWithNames = React.forwardRef((props, targets: any) => (
 
 const Illustration = () => {
   return (
-    <svg id="home_illustration" viewBox="0 0 255.63 379.4">
-      <g id="base">
-        <polygon
-          style={{ fill: "#003064" }}
-          points="0.07,220.58 0.07,181.29 127.98,239.84 127.38,279.4"
-        />
-        <polygon
-          style={{ fill: "#004178" }}
-          points="255.63,181.29 127.98,239.84 127.38,279.4 255.63,220.58"
-        />
-        <polygon
-          style={{ fill: "#00548C" }}
-          points="127.98,122.47 0.07,181.29 127.98,239.84 255.63,181.29"
-        />
-      </g>
-      <Timeline target={<TargetWithNames />}>
-        <Tween to={{ y: "-60" }} target="elevationCubes" position="0" />
-        <Tween to={{ y: "-50" }} target="frontCube" position="1" />
-        <Tween to={{ x: "-15" }} target="leftCube" position="1" />
-        <Tween to={{ x: "15" }} target="rightCube" position="1" />
-      </Timeline>
-      <g id="yellow_cube">
-        <polygon
-          style={{ fill: "#F4AC02" }}
-          points="159.22,168.04 159.22,127.96 222.61,157.05 222.65,196.41"
-        />
-        <polygon
-          style={{ fill: "#F8C73F" }}
-          points="255.48,143.25 222.61,157.05 222.65,196.41 255.63,181.29"
-        />
-        <polygon
-          style={{ fill: "#FBD865" }}
-          points="192.46,112.66 159.22,127.96 222.61,157.05 255.48,143.25"
-        />
-      </g>
-      <g id="pink_cube">
-        <polygon
-          style={{ fill: "#D62A5E" }}
-          points="0.07,181.71 0,140.67 63.69,171.53 63.69,210.49"
-        />
-        <polygon
-          style={{ fill: "#E65B77" }}
-          points="127.38,182.29 63.69,210.49 63.69,171.53 127.38,142.33"
-        />
-        <polygon
-          style={{ fill: "#F27D8A" }}
-          points="63.49,111.6 0,140.67 63.69,171.53 127.38,142.33"
-        />
-      </g>
-    </svg>
+    <div style={{ maxWidth: 500, display: "flex", margin: "0 auto" }}>
+      <svg id="home_illustration" viewBox="0 0 255.63 379.4">
+        <g id="base">
+          <polygon
+            style={{ fill: "#003064" }}
+            points="0.07,220.58 0.07,181.29 127.98,239.84 127.38,279.4"
+          />
+          <polygon
+            style={{ fill: "#004178" }}
+            points="255.63,181.29 127.98,239.84 127.38,279.4 255.63,220.58"
+          />
+          <polygon
+            style={{ fill: "#00548C" }}
+            points="127.98,122.47 0.07,181.29 127.98,239.84 255.63,181.29"
+          />
+        </g>
+        <Timeline target={<TargetWithNames />}>
+          <Tween to={{ y: "-60" }} target="elevationCubes" position="0" />
+          <Tween to={{ y: "-50" }} target="frontCube" position="1" />
+          <Tween to={{ x: "-15" }} target="leftCube" position="1" />
+          <Tween to={{ x: "15" }} target="rightCube" position="1" />
+        </Timeline>
+        <g id="yellow_cube">
+          <polygon
+            style={{ fill: "#F4AC02" }}
+            points="159.22,168.04 159.22,127.96 222.61,157.05 222.65,196.41"
+          />
+          <polygon
+            style={{ fill: "#F8C73F" }}
+            points="255.48,143.25 222.61,157.05 222.65,196.41 255.63,181.29"
+          />
+          <polygon
+            style={{ fill: "#FBD865" }}
+            points="192.46,112.66 159.22,127.96 222.61,157.05 255.48,143.25"
+          />
+        </g>
+        <g id="pink_cube">
+          <polygon
+            style={{ fill: "#D62A5E" }}
+            points="0.07,181.71 0,140.67 63.69,171.53 63.69,210.49"
+          />
+          <polygon
+            style={{ fill: "#E65B77" }}
+            points="127.38,182.29 63.69,210.49 63.69,171.53 127.38,142.33"
+          />
+          <polygon
+            style={{ fill: "#F27D8A" }}
+            points="63.49,111.6 0,140.67 63.69,171.53 127.38,142.33"
+          />
+        </g>
+      </svg>
+    </div>
   );
 };
 
