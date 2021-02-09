@@ -64,8 +64,12 @@ const TargetWithNames = React.forwardRef((props, targets: any) => (
 
 const Illustration = () => {
   return (
-    <div style={{ maxWidth: 500, display: "flex", margin: "0 auto" }}>
-      <svg id="home_illustration" viewBox="0 0 255.63 379.4">
+    <div style={{ maxWidth: 400, display: "flex", margin: "0 auto" }}>
+      <svg
+        id="home_illustration"
+        viewBox="0 0 255.63 379.4"
+        style={{ width: "100%" }}
+      >
         <g id="base">
           <polygon
             style={{ fill: "#003064" }}
