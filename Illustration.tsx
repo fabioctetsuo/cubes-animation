@@ -87,8 +87,8 @@ const Illustration = () => {
         <Timeline target={<TargetWithNames />}>
           <Tween to={{ y: "-60" }} target="elevationCubes" position="0" />
           <Tween to={{ y: "-50" }} target="frontCube" position="1" />
-          <Tween to={{ x: "-15" }} target="leftCube" position="1" />
-          <Tween to={{ x: "15" }} target="rightCube" position="1" />
+          <Tween to={{ x: "-15", y: "7" }} target="leftCube" position="1" />
+          <Tween to={{ x: "15", y: "7" }} target="rightCube" position="1" />
         </Timeline>
         <g id="yellow_cube">
           <polygon
